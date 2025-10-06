@@ -1,0 +1,5 @@
+vremia = int(input())
+chasov = vremia // 3600
+minut = (vremia - chasov * 3600) // 60
+secund = (vremia - chasov * 3600) - minut * 60
+print(f'{chasov}часов {minut}минут {secund}секунд' )
