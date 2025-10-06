@@ -1,0 +1,5 @@
+x = int(input())
+y = int(input())
+n = x%y
+m = y%x
+print((n*m)+1)
