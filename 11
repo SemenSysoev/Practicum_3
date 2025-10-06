@@ -1,0 +1,4 @@
+n = int(input())
+chasov = n // 30
+minut = (n - (chasov*30)) * 2
+print(chasov, minut)
