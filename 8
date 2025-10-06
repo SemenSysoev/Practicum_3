@@ -1,0 +1,6 @@
+from math import *
+a, b, c = int(input()), int(input()), int(input())
+A = degrees(acos((b**2 + c**2 - a**2)/(2*b*c)))
+B = degrees(acos((a**2 + c**2 - b**2)/(2*a*c)))
+C = degrees(acos((b**2 + a**2 - c**2)/(2*b*a)))
+print(A, B, C)
