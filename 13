@@ -1,0 +1,4 @@
+n = int(input())
+c = int(input())
+nomer = int(input())
+print(f'страница {(nomer//(n*c))+1}, столбец {((nomer-n*c)//n)+1}, строка {(((((nomer-n*c)//n)+1)*n-(nomer-n*c))//c)+1}')
