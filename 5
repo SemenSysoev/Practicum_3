@@ -1,7 +1,10 @@
-a = ("(\___/) ")
-b = ("(='-'=) ")
-c = ('(")_(") ')
-d = int(input())
-print(a*d)
-print(b*d)
-print(c*d)
+n = int(input())
+primes = set(range(2, n))
+
+for i in range(2, int(n**0.5) + 1):
+    if i in primes:
+        multiples = set(range(i * i, n, i))
+        primes.difference_update(multiples)
+
+result = sorted(primes)
+print(*result)
